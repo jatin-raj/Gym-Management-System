@@ -1,0 +1,12 @@
+#move{
+    animation: leftRight 3s ease 2s infinite forwards ;
+}
+
+@keyframes leftRight {
+   from{
+    transform: rotateX('45');
+   }
+   to{
+    transform: rotateX('75');
+   }
+}

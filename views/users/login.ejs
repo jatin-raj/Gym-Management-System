@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Correct Tailwind CSS CDN link for v3.x.x -->
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <title>Login Page</title>
+  </head>
+  <body class="bg-gray-200 h-screen flex items-center justify-center">
+    <div class="bg-gray-300 shadow-lg rounded-lg p-8 max-w-md w-full">
+      <h1 class="text-3xl italic font-bold text-center mb-6">Gym Shark</h1>
+      <form action="http://localhost:8080/home" class="space-y-6" method="post">
+        <div>
+          <label for="name" class="block text-lg font-semibold text-gray-700"
+            >Name</label
+          >
+          <input 
+            type="text"
+            name="name"
+            class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md hover:shadow-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="username"
+            class="block text-lg font-semibold text-gray-700"
+            >Username</label
+          >
+          <input
+            type="text"
+            name="username"
+            class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md hover:shadow-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="password"
+            class="block text-lg font-semibold text-gray-700"
+            >Password</label
+          >
+          <input
+            type="password"
+            name="password"
+            class="mt-1 w-full hover:shadow-lg py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
